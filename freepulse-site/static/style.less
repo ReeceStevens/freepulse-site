@@ -1,0 +1,326 @@
+// @primary-color: #262E4C;
+// @lighter-primary: ;
+// @light-bg: #F6F6F5;
+// @light-font: #F6F6F5;
+// @primary-font: #7E7B7A;
+@import "background_svg";
+
+@mobile-threshold: 880px;
+
+@primary-color: #EF741D;
+@lighter-primary: #EB9851;
+@light-bg: #F6F6F5;
+@light-secondary: #F6F6F5;
+@light-tertiary: #BD997A;
+@primary-font: #364448;
+@light-font: #F6F6F5;
+
+body {
+    font-family: 'Helvetica Neue';
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+    // background-color: @light-bg;
+    color: @primary-font;
+}
+
+img {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+td img {
+    width: 70%;
+}
+
+nav {
+    flex: 1 0 5em;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: @primary-color;
+    color: @light-font;
+
+    .left-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+        font-weight: 900;
+        font-size: x-large;
+        a {
+            text-decoration: none;
+            color: @light-font;
+        }
+        /* font-color: #F6F6F5; */
+    }
+
+    .right-navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin-right: 50px;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100%;
+        }
+        a {
+            height: 100%;
+            padding-top: 1.25em;
+            padding-left: 3em;
+            padding-right: 3em;
+            font-size: large;
+            text-decoration: none;
+            color: @light-font;
+            &:visited {
+                color: @light-font;
+            }
+            &:hover {
+                background-color: @lighter-primary;
+                color: @light-font;
+                font-style: normal;
+            }
+            @media(max-width: @mobile-threshold) {
+                font-size: medium;
+                padding-left: .5em;
+                padding-right: .5em;
+            }
+        }
+    }
+}
+
+.site-container {
+    flex: auto;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    img {
+        width: 70%;
+    }
+    @media(max-width: @mobile-threshold) {
+        flex-direction: column;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    text-align: right;
+    padding-bottom: 0em;
+    padding-top: 0em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // background-color: @light-tertiary;
+    background-color: @lighter-primary;
+    // color: #878F9F;
+    color: @primary-font;
+    opacity: 0.8;
+    padding-right: 1em;
+    min-width: 30%;
+    /* animation: dropin 2s ease-out; */
+    h1 {
+        font-size: 50pt;
+        border-bottom-style: solid;
+    }
+    h3 {
+        font-size: 15pt;
+    }
+    @media(max-width: 1345px) {
+        h1 {
+            font-size: 40pt;
+            border-bottom-style: solid;
+        }
+        h3 {
+            font-size: 12pt;
+        }
+    }
+    @media(max-width: @mobile-threshold) {
+        padding-right: 20%;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media(max-width: @mobile-threshold) {
+        flex-direction: column;
+    }
+}
+
+.section-content {
+    padding: 4em 2.5em 4em 2.5em;
+    max-width: 800px;
+    margin: 0 0 0 0;
+}
+
+.photo_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    @media(max-width: @mobile-threshold) {
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+}
+
+#intro_section_photo {
+    width: 50%;
+    height: auto;
+    @media(max-width: @mobile-threshold) {
+        width: 100%;
+        height: auto;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#sect2 {
+    background-image: url('./sunset_mountains_cropped.jpg');
+    background-size: 100% auto;
+    background-position: center center;
+    flex-direction: row;
+    @media(max-width: 570px) {
+        background-size: auto 100%;
+    }
+    text-align: center;
+    padding: 0px;
+}
+
+#sect2 .section-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+#sect2 td {
+    color: white;
+}
+
+#sect3 {
+    text-align: left;
+    padding: 0px;
+}
+
+.site-footer {
+    text-align: center;
+    text-size: 0.7em;
+    padding-bottom: 2em;
+}
+
+.section-footer {
+    font-size: 0.7em;
+}
+
+#feature-diagram {
+    width: 100%;
+}
+
+td {
+    max-width:20%;
+    min-width: 20%;
+    text-align: center;
+}
+
+// @media(max-width: 565px) {
+//     #feature-diagram tr {
+//         padding-top:10px;
+//         padding-bottom: 10px;
+//     }
+// }
+
+@media(max-width: 565px) {
+    tr td:nth-child(1),
+    tr td:nth-child(2),
+    tr td:nth-child(3) {
+        min-width: 0px;
+        max-width: 0px;
+        width: 0px;
+        visibility: hidden;
+        font-size: 0pt;
+        img {
+            height: 0px;
+        }
+    }
+    tr td:nth-child(4),
+    tr td:nth-child(5) {
+        min-width: 50%;
+        max-width: 50%;
+    }
+}
+
+#feature-diagram tr:nth-child(1) {
+    animation: riseup 0.8s ease-out;
+}
+
+#feature-diagram tr:nth-child(2) {
+    animation: riseup 1.0s ease-out;
+}
+
+#feature-diagram tr:nth-child(3) {
+    animation: riseup 1.2s ease-out;
+}
+
+#feature-diagram tr:nth-child(4) {
+    animation: riseup 1.4s ease-out;
+}
+
+#feature-diagram tr:nth-child(5) {
+    animation: riseup 1.6s ease-out;
+}
+
+@keyframes riseup {
+    0% {
+        color: white;
+        opacity: 0;
+        transform: translateY(160px);
+    }
+    100% {
+        color: black;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes dropin {
+    0% {
+        opacity: 0;
+        color: black;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 0.8;
+        color: white;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: auto;
+    // margin: auto;
+}

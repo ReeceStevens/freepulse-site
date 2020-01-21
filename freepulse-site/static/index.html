@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>FreePulse</title>
+        <link rel="stylesheet" type="text/css" href="./bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./carousel.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="left-navbar">
+            <a href="">FreePulse</a>
+            </div>
+            <div class="right-navbar">
+                <div>
+            <a href="#about">About</a>
+            <a target="_blank" href="http://reecestevens.me/blog">Blog</a>
+            <a target="_blank" href="https://www.gofundme.com/freepulse">Donate</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="site-container">
+        <div class="header">
+        <img src="./prototype.jpg"/>
+        <div class="header-text">
+        <h1>FreePulse</h1>
+        <h3>A Low-Cost Patient Monitor</br>
+            Designed for Developing World Hospitals<h3>
+        </div>
+        </div>
+
+        <div class="section pattern_background" id="about">
+        <div class="section-content">
+        <h2>What is FreePulse?</h2>
+        <p>FreePulse is a patient monitor designed from the ground-up to meet
+        the needs of hospitals in the developing world. These hospitals face a
+        wide host of issues ranging from unstable power grids, uncontrolled
+        climate conditions, high operator turnover rate, and extremely tight budgets.
+        On top of all of this, donated medical equipment often cannot fill this gap
+        in medical care. In fact, a recent Engineering World Health study found
+        that <em>39% of donated equipment is broken upon arrival and 98% is
+        nonfunctional after five years.<sup>1</sup></em></p>
+        <p>FreePulse aims to solve these problems by filling a void in the current
+        medical device market: <b>low-cost devices that are designed for developing
+        world operating conditions.</b></p>
+        <p>Interested in learning more? Check out <a href="http://reecestevens.me/blog/2016/04/01/project-motivation/" target="_blank">this blog post</a> for more info!</p>
+        <div class="section-footer">
+            <!-- TODO: Find a link-able source for this-->
+            <p>1 - Engineering World Health End-of-Conference Update, August 2014</p>
+        </div>
+        </div>
+        <div id="intro_section_photo" class="photo_container">
+        <img  src="okhaldhunga_testing.jpg"/>
+        </div>
+        </div>
+
+        <div class="section" id="sect2">
+        <div class="section-content">
+        <h2>Why FreePulse?</h2>
+        <table id="feature-diagram">
+            <tbody>
+                <tr><td>Unstable Power Grid</td><td><img src="./power_bad.svg" /></td><td class="arrow"><img src="./arrow.svg" /></td><td><img src="./power_good.svg" /></td><td>Resistant to voltage spikes and drops</td></tr>
+                <tr><td>Unstable Climate Conditions</td><td><img src="./climate_bad.svg" /></td><td class="arrow"><img src="./arrow.svg" /></td><td><img src="./climate_good.svg" /></td><td>Rugged plastic design</td></tr>
+                <tr><td>High staff turnover rate</td><td><img src="./complexity-bad.svg" /></td><td class="arrow"><img src="./arrow.svg" /></td><td><img src="./complexity-good.svg" /></td><td>Simple touch screen user interface</td></tr>
+                <tr><td>Mysterious software errors</td><td><img src="./software_bad.svg" /></td><td class="arrow"><img src="./arrow.svg" /></td><td><img src="./software_good.svg" /></td><td>Open-source software backend</td></tr>
+                <tr><td>Limited operating budget</td><td><img src="./cost_bad.svg" /></td><td class="arrow"><img src="./arrow.svg" /></td><td><img src="./cost_good.svg" /></td><td>250 USD price tag</td></tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+
+        <div class="section pattern_background" id="sect3">
+        <div class="section-content">
+        <h2>What has FreePulse done recently?</h2>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="./amppipal_preclinical.JPG" alt="Preclinical Trials">
+                      <div class="carousel-caption">Preclinical Trials in Nepal</div>
+                    </div>
+
+                    <div class="item">
+                      <img src="./ewh_logo.jpg" alt="Competitions">
+                      <div class="carousel-caption">NIH DEBUT and EWH Design Competitions</div>
+                    </div>
+
+                    <div class="item">
+                      <img src="./rwanda_old_prototype.jpg" alt="Rwanda Research">
+                      <div class="carousel-caption">Research in Rwanda</div>
+                    </div>
+                  </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <!-- <span aria-hidden="true">&lt;</span> -->
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- <h3>Preclinical Trials in Nepal</h3> -->
+        <!-- <h3>NIH Debut Competition (2nd Place)</h3> -->
+        <!-- <h3>EWH National Design Competition (1st Place)</h3> -->
+        <!-- <h3>Background Research in Rwanda</h3> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <div class="site-footer">
+            Photography courtesy of <a target="_blank" href="https://www.mrsmadeleinephoto.com/">Mrs. Madeleine Photography</a>
+        </div>
+        </div>
+    </body>
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-99772721-1', 'auto');
+     ga('send', 'pageview');
+
+    </script>
+</html>
